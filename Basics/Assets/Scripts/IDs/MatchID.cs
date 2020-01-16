@@ -16,6 +16,8 @@ public class MatchID : MonoBehaviour
             //do work
         }
 
+        var otherNameID = other.GetComponent(nameIDOBJ);
+
     }
     //check for multiple objects; check to see if it is more than one object. Like how many NameIDs it can have
     //the problem with the name and tag is it can only have one thing. 
