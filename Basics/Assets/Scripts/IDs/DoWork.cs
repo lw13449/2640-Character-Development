@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DoWork : MonoBehaviour
 {
     public NameID nameIDObj;
+	public UnityEvent changeLocation;
 
     public void Work()
     {
-        print("Working");
+        nameIDObj.GetComponent<UnityEvent>.changeLocation;
     }
 }
