@@ -15,7 +15,7 @@ public class MatchID : MonoBehaviour
         {
             if (nameID == otherNameID)
             {
-                doWorkObj.Work(nameIDObj.changeLocation);
+                doWorkObj.Work();
             }
         }
 
