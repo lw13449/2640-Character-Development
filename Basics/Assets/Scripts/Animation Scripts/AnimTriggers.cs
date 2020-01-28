@@ -1,52 +1,44 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimTriggers : MonoBehaviour
 {
-    public void Jump()
+    private Animator _jump;
+    private Animator _walk;
+    private Animator _left;
+    private Animator _right;
+
+    public void Start()
     {
-        if (Input.GetKeyDown("c"))
-        {
-            this.GetComponent<Animator>().SetTrigger("Jump");
-        }
-        else
-        {
-            GetComponent<Animator>().SetTrigger("Idle");
-        }
+        _right = this.GetComponent<Animator>();
+        _left = this.GetComponent<Animator>();
+        _walk = this.GetComponent<Animator>();
+        _jump = this.GetComponent<Animator>();
+        this.GetComponent<Animator>().SetTrigger("Idle");
     }
-    
-    public void Walk()
+
+    private void Update()
     {
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.GetComponent<Animator>().SetTrigger("Walk");
+            _jump.SetTrigger("Jump");
         }
-        else
+        
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            GetComponent<Animator>().SetTrigger("Idle");
+            _walk.SetTrigger("Walk");
         }
-    }
-    public void WalkLeft()
-    {
-        if (Input.GetKeyDown("a"))
+        
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            this.GetComponent<Animator>().SetTrigger("Left");
+            _left.SetTrigger("Left");
         }
-        else
+        
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            GetComponent<Animator>().SetTrigger("Idle");
-        }
-    }
-    public void WalkRight()
-    {
-        if (Input.GetKeyDown("d"))
-        {
-            this.GetComponent<Animator>().SetTrigger("Right");
-        }
-        else
-        {
-            GetComponent<Animator>().SetTrigger("Idle");
+            _right.SetTrigger("Right");
         }
     }
 }
