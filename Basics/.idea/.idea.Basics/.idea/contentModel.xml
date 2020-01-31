@@ -16,7 +16,12 @@
             <e p="IntData.cs" t="Include" />
           </e>
           <e p="Character" t="Include">
+            <e p="ApplyForce.cs" t="Include" />
             <e p="Character Controller.cs" t="Include" />
+          </e>
+          <e p="collections" t="Include">
+            <e p="GameObject.cs" t="Include" />
+            <e p="Lists.cs" t="Include" />
           </e>
           <e p="DebugObject.cs" t="Include" />
           <e p="IDs" t="Include">
