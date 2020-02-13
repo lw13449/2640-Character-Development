@@ -8,6 +8,6 @@ public class DoWork : MonoBehaviour
 
     public void Work()
     {
-        print("Working");
+       //do work
     }
 }
