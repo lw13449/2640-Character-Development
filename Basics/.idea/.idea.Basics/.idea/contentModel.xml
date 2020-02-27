@@ -18,6 +18,8 @@
           <e p="Character Controller.cs" t="Include" />
           <e p="DebugObject.cs" t="Include" />
           <e p="IDs" t="Include">
+            <e p="ChangeColorBehaviour.cs" t="Include" />
+            <e p="DataStorage.cs" t="Include" />
             <e p="DoWork.cs" t="Include" />
             <e p="IDBehaviour.cs" t="Include" />
             <e p="MatchID.cs" t="Include" />
