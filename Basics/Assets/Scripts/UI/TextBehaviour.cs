@@ -8,6 +8,8 @@ public class TextBehaviour : MonoBehaviour
 {
     
     private Text textObj;
+    public StringListData stringListDataObj;
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -17,6 +19,6 @@ public class TextBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        textObj.text = stringListDataObj.ReturnCurrentLine();
     }
 }

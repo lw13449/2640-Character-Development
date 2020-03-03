@@ -11,14 +11,21 @@
           <e p="Animation Scripts" t="Include">
             <e p="AnimationScript.cs" t="Include" />
             <e p="AnimTriggers.cs" t="Include" />
-            <e p="FloatData.cs" t="Include" />
-            <e p="GameAction.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
           </e>
+          <e p="Character" t="Include">
+            <e p="ApplyForce.cs" t="Include" />
+            <e p="CharacterMover.cs" t="Include" />
+          </e>
           <e p="Character Controller.cs" t="Include" />
+          <e p="collections" t="Include">
+            <e p="Lists.cs" t="Include" />
+          </e>
           <e p="DebugObject.cs" t="Include" />
+          <e p="FloatData.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="IDs" t="Include">
+            <e p="BehaviourID.cs" t="Include" />
             <e p="ChangeColorBehaviour.cs" t="Include" />
             <e p="DataStorage.cs" t="Include" />
             <e p="DoWork.cs" t="Include" />
@@ -26,6 +33,12 @@
             <e p="MatchID.cs" t="Include" />
             <e p="NameID.cs" t="Include" />
             <e p="ObjectID.cs" t="Include" />
+          </e>
+          <e p="MathBehaviour.cs" t="Include" />
+          <e p="TriggerBehaviour.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="StringListData.cs" t="Include" />
+            <e p="TextBehaviour.cs" t="Include" />
           </e>
         </e>
       </e>

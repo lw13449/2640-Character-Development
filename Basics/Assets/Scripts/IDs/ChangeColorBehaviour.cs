@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ChangeColorBehaviour : MonoBehaviour
 {
     //isn't accepting the ColorData. . . figure out why
-    public ColorData colorSelection;
+    //public ColorData colorSelection;
     public UnityEvent changeOnTrigger;
     public enum ComponentsToChange
     {
@@ -19,29 +19,29 @@ public class ChangeColorBehaviour : MonoBehaviour
 
     public ComponentsToChange componentToChange;
 
-    private void Awake()
-    {
-        switch (componentToChange)
-        {
-            case ComponentsToChange.SpriteRenderer:
-                GetComponent<SpriteRenderer>().color = colorSelection.value;
-                break;
-            case ComponentsToChange.Image:
-                GetComponent<Image>().color = colorSelection.value;
-                break;
-            case ComponentsToChange.Material:
-                GetComponent<Material>().color = colorSelection.value;
-                break;
-            case ComponentsToChange.Text:
-                GetComponent<Text>().color = colorSelection.value;
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
-    }
+    //private void Awake()
+    //{
+    //    switch (componentToChange)
+    //    {
+    //        case ComponentsToChange.SpriteRenderer:
+    //            GetComponent<SpriteRenderer>().color = colorSelection.value;
+    //            break;
+    //        case ComponentsToChange.Image:
+    //            GetComponent<Image>().color = colorSelection.value;
+    //            break;
+    //        case ComponentsToChange.Material:
+    //            GetComponent<Material>().color = colorSelection.value;
+    //            break;
+    //        case ComponentsToChange.Text:
+    //            GetComponent<Text>().color = colorSelection.value;
+    //            break;
+    //        default:
+    //            throw new ArgumentOutOfRangeException();
+    //    }
+    //}
 
     private void OnTriggerEnter(Collider obj)
     {
-        obj.GetComponent<SpriteRenderer>().color = colorSelection.value;
+        //obj.GetComponent<SpriteRenderer>().color = colorSelection.value;
     }
 }

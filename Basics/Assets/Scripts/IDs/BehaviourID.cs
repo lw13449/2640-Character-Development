@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BehaviourID : IdBehaviour
 {
-    public WorkSystemManager workSystemManagerObj;
+    //public WorkSystemManager workSystemManagerObj;
     public NameID otherIdObj;
 
     private void OnTriggerEnter(Collider other)
@@ -15,13 +15,13 @@ public class BehaviourID : IdBehaviour
 
     private void CheckId()
     {
-        foreach (var obj in workSystemManagerObj.workIdList)
-        {
-            if (otherIdObj == obj.nameIdObj)
-            {
-                obj.workSystemObj.Work();
-                obj.workEvent.Invoke();
-            }
-        }
+        //foreach (var obj in workSystemManagerObj.workIdList)
+        //{
+        //    if (otherIdObj == obj.nameIdObj)
+        //    {
+        //        obj.workSystemObj.Work();
+        //        obj.workEvent.Invoke();
+        //    }
+        //}
     }
 }
