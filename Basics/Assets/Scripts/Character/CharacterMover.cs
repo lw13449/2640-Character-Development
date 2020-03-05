@@ -19,18 +19,18 @@ public class CharacterMover : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            position.y = 0;
+            position.y = 0; 
             jumpCount = 0;
         }
 
         position.x = Input.GetAxis("Horizontal") * speed;
-        if (Input.GetButtonDown("Space") && jumpCount)
+        if (Input.GetButtonDown("Space"))
         {
             position.y = jumpSpeed;
             jumpCount++;
         }
 
         position.y -= gravity;
-        controller.Move(position * Time.deltaTime);
+        //controller.Move(position * Time.deltaTime);
     }
 }

@@ -9,7 +9,8 @@ public class CharacterController : MonoBehaviour
     public float moveSpeed = 10f, gravity = 9.81f, jumpSpeed = 30f;
     private int jumpCount;
     public int jumpCountMax = 2;
-    
+    public bool isGrounded;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();

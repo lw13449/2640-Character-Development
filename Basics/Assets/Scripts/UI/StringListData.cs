@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,12 @@ public class StringListData : ScriptableObject
     {
         return stringListObj[currentLineNumber];
     }
-    
+
+    public void ResetToZero()
+    {
+        currentLineNumber = 0;
+    }
+
     public void IncrementLineNumber()
     {
         if (currentLineNumber < stringListObj.Count)

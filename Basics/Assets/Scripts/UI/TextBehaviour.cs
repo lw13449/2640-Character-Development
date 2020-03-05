@@ -10,15 +10,14 @@ public class TextBehaviour : MonoBehaviour
     private Text textObj;
     public StringListData stringListDataObj;
     
-    // Start is called before the first frame update
     void Awake()
     {
         textObj = GetComponent<Text>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void UpdateText()
     {
         textObj.text = stringListDataObj.ReturnCurrentLine();
+        //The only line in our four scripts that connects one to the other. 
     }
 }
