@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
@@ -8,16 +9,20 @@ public class TextBehaviour : MonoBehaviour
 {
     
     private Text textObj;
-    public StringListData stringListDataObj;
+    public UnityEvent awakeEvent;
     
-    void Awake()
+    public void Start()
     {
         textObj = GetComponent<Text>();
+        awakeEvent.Invoke();
     }
     
-    public void UpdateText()
+    public void UpdateText(StringListData stringListDataObj)
     {
         textObj.text = stringListDataObj.ReturnCurrentLine();
-        //The only line in our four scripts that connects one to the other. 
+    }
+    public void UpdateText(IntData intDataObj)
+    {
+        textObj.text = intDataObj.value.ToString();
     }
 }
