@@ -19,7 +19,10 @@
           </e>
           <e p="Character Controller.cs" t="Include" />
           <e p="collections" t="Include">
+            <e p="Collectable.cs" t="Include" />
+            <e p="Collection.cs" t="Include" />
             <e p="Lists.cs" t="Include" />
+            <e p="WeaponCollectable.cs" t="Include" />
           </e>
           <e p="DebugObject.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
