@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\10803934\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\10803934\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Basics.1921856657.00" t="ExcludeRecursive" />
-    <e p="C:\Users\10803934\OneDrive - Utah Valley University\GitKraken\2640-Character-Development\Basics" t="IncludeRecursive">
+    <e p="C:\Users\wrigh\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wrigh\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Basics.-2101647755.00" t="ExcludeRecursive" />
+    <e p="C:\Users\wrigh\Documents\SPRING 2020\2640 Character Development\GitKraken\2640-Character-Development\Basics" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AnimBehaviour.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AiBase.cs" t="Include" />
+          <e p="AiBehaviour.cs" t="Include" />
+          <e p="AiBrain.cs" t="Include" />
+          <e p="AiHunt.cs" t="Include" />
+          <e p="AiIdle.cs" t="Include" />
           <e p="Animation Scripts" t="Include">
             <e p="AnimationScript.cs" t="Include" />
             <e p="AnimTriggers.cs" t="Include" />
@@ -19,15 +24,11 @@
           </e>
           <e p="Character Controller.cs" t="Include" />
           <e p="collections" t="Include">
-            <e p="Collectable.cs" t="Include" />
-            <e p="Collection.cs" t="Include" />
             <e p="Lists.cs" t="Include" />
-            <e p="WeaponCollectable.cs" t="Include" />
           </e>
           <e p="DebugObject.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
-          <e p="GameActionHandler.cs" t="Include" />
           <e p="IDs" t="Include">
             <e p="BehaviourID.cs" t="Include" />
             <e p="ChangeColorBehaviour.cs" t="Include" />
