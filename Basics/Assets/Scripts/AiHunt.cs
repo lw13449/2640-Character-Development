@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+[CreateAssetMenu]
 public class AiHunt : AiBase
 {
     public GameAction destinationAction;

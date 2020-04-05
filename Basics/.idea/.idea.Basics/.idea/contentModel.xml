@@ -40,6 +40,7 @@
             <e p="ObjectID.cs" t="Include" />
           </e>
           <e p="MathBehaviour.cs" t="Include" />
+          <e p="SimpleAi.cs" t="Include" />
           <e p="TriggerBehaviour.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="StringListData.cs" t="Include" />
