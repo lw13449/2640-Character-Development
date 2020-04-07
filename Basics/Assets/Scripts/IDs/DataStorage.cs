@@ -2,7 +2,7 @@
 using UnityEngine.Serialization;
 
 [CreateAssetMenu]
-public class DataStorage : ScriptableObject
+public partial class DataStorage : ScriptableObject
 {
     public ScriptableObject data;
 
