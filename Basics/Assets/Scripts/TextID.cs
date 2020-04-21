@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class TextUi : MonoBehaviour
 {
-    [FormerlySerializedAs("DataField")] public InputField dataField;
-    [FormerlySerializedAs("DataOutputText")] public Text dataOutputText;
+    public InputField dataField;
+    public Text dataOutputText;
 
-    [FormerlySerializedAs("NameDataStorage")] public DataStorage nameDataStorage;
+    public DataStorage nameDataStorage;
 
-    [FormerlySerializedAs("SoData")] public StringData soData;
+    public StringData soData;
 
     private void Start()
     {

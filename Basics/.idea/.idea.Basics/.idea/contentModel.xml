@@ -27,6 +27,7 @@
             <e p="Lists.cs" t="Include" />
           </e>
           <e p="DebugObject.cs" t="Include" />
+          <e p="DragController.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="IDs" t="Include">
@@ -41,6 +42,7 @@
           </e>
           <e p="MathBehaviour.cs" t="Include" />
           <e p="SimpleAi.cs" t="Include" />
+          <e p="StringData.cs" t="Include" />
           <e p="TextID.cs" t="Include" />
           <e p="TriggerBehaviour.cs" t="Include" />
           <e p="UI" t="Include">
